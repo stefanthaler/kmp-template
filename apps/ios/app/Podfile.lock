@@ -1,0 +1,16 @@
+PODS:
+  - kmp (1.0.0-override-in-library)
+
+DEPENDENCIES:
+  - kmp (from `../../../apps/ios/facade`)
+
+EXTERNAL SOURCES:
+  kmp:
+    :path: "../../../apps/ios/facade"
+
+SPEC CHECKSUMS:
+  kmp: 7e6430f9a9762c9647f8907d8b305b957dac0806
+
+PODFILE CHECKSUM: 7c2a9d72ab5d6b463e8ffa162fd8262982756cc9
+
+COCOAPODS: 1.11.3

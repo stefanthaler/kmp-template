@@ -1,0 +1,120 @@
+#
+#                                      Versions
+#################################################################################################
+[versions]
+# shared
+jvm-target = "11"
+kotlin = "1.8.0"
+kotlin-api = "1.7"
+kotlinx-coroutines = "1.6.4"
+kotlinx-serialization = "1.4.1"
+# Android
+android-app-id = "net.thalerit.kmp.template"
+android-app-code = "1"
+android-app-name = "alpha"
+android-build-tools = "33.0.1"
+android-compile-sdk = "33"
+android-min-sdk = "26"
+android-target-sdk = "32"
+android-gradle-plugin = "7.3.1"
+android-core-ktx = "1.9.0"
+android-objectbox = "3.5.0"
+androidx-navigation = "2.5.3"
+# https://developer.android.com/jetpack/compose/setup#bom-version-mapping
+compose-compiler = "1.4.0"
+compose-bom = "2022.12.00"
+
+
+# iOS
+ios-homepage = "https://mylibpage.net"
+ios-deployment-target = "16.0"
+ios-pods-afnetworking = "~> 4.0.1"
+# JS
+kfc = "5.95.0"
+kotlin-wrappers = "1.0.0-pre.489"
+
+#
+#                                   Libraries
+#################################################################################################
+[libraries]
+# shared
+kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+junit = "junit:junit:4.13.2"
+# Android
+android-test-junit4 = "androidx.test.ext:junit:1.1.3"
+android-gradle = { module = "com.android.tools.build:gradle", version.ref = "android-gradle-plugin" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "android-core-ktx" }
+androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha03"
+androidx-navigation-compose  = { module = "androidx.navigation:navigation-compose", version.ref="androidx-navigation" }
+androidx-navigation-fragment-ktx  = { module = "androidx.navigation:navigation-fragment-ktx", version.ref="androidx-navigation" }
+androidx-navigation-ui-ktx  = { module = "androidx.navigation:navigation-ui-ktx", version.ref="androidx-navigation" }
+androidx-navigation-dynamic-features-fragment  = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref="androidx-navigation" }
+androidx-navigation-testing  = { module = "androidx.navigation:navigation-testing", version.ref="androidx-navigation" }
+androidx-activity-compose = "androidx.activity:activity-compose:1.7.0-alpha02"
+androidx-test-ext = "androidx.test.ext:junit:1.1.5"
+androidx-test-espresso-core = "androidx.test.espresso:espresso-core:3.5.1"
+
+android-objectbox = { module = "io.objectbox:objectbox-kotlin", version.ref = "android-objectbox" }
+
+# JS
+kfc-gradle = { module = "io.github.turansky.kfc:kfc-gradle-plugin", version.ref = "kfc" }
+# https://github.com/JetBrains/kotlin-wrappers
+kotlin-wrappers-bom = { module = "org.jetbrains.kotlin-wrappers:kotlin-wrappers-bom", version.ref = "kotlin-wrappers" }
+kotlin-wrappers-browser = { module = "org.jetbrains.kotlin-wrappers:kotlin-browser" }
+kotlin-wrappers-csstype = { module = "org.jetbrains.kotlin-wrappers:kotlin-csstype" }
+kotlin-wrappers-react = { module = "org.jetbrains.kotlin-wrappers:kotlin-react" }
+kotlin-wrappers-react-dom = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-dom" }
+kotlin-wrappers-react-router-dom = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-router-dom" }
+
+
+#                                       Bundles
+################################################################################################
+[bundles]
+
+#
+#                                       Plugins
+################################################################################################
+[plugins]
+#   build
+# updating version catalog https://github.com/littlerobots/version-catalog-update-plugin
+manes = "com.github.ben-manes.versions:0.44.0"
+vcu = "nl.littlerobots.version-catalog-update:0.7.0"
+dgg = "com.vanniktech.dependency.graph.generator:0.8.0"
+
+
+# groupId: com.vanniktech.dependency.graph.generator
+# artifactId = com.vanniktech.dependency.graph.generator.gradle.plugin
+# classpath: com.vanniktech:gradle-dependency-graph-generator-plugin:0.8.0
+# id = com.vanniktech.dependency.graph.generator
+
+# groupID io.objectbox
+# artifactId = objectbox-gradle-plugin
+
+#   shared
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinx-serialization" }
+# android
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+android-objectbox = { id = "io.objectbox", version.ref ="android-objectbox"}
+
+#   Android
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "androidx-navigation"}
+#   iOS
+kotlin-appleplugin = "org.jetbrains.gradle.apple.applePlugin:222.3345.143-0.19"
+#   JS
+kfc-multiplatform = { id = "io.github.turansky.kfc.multiplatform", version.ref = "kfc" }
+kfc-library = { id = "io.github.turansky.kfc.library", version.ref = "kfc" }
+kfc-application = { id = "io.github.turansky.kfc.application", version.ref = "kfc" }
+kfc-react = { id = "io.github.turansky.kfc.react", version.ref = "kfc" }
