@@ -1,4 +1,3 @@
-import gradle.kotlin.dsl.accessors._b7dceff322b6b2884f430c7bbb2ba83b.kotlin
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed

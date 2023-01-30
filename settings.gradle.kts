@@ -32,3 +32,4 @@ include(":apps:js:app")
 
 
 include(":apps:ios:facade")
+include(":apps:ios:dependency-cocoapods")

@@ -1,15 +1,36 @@
 PODS:
-  - kmp (1.0.0-override-in-library)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - kmp (1.0.0-override-in-library):
+    - AFNetworking (~> 4.0.1)
 
 DEPENDENCIES:
   - kmp (from `../../../apps/ios/facade`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   kmp:
     :path: "../../../apps/ios/facade"
 
 SPEC CHECKSUMS:
-  kmp: 7e6430f9a9762c9647f8907d8b305b957dac0806
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  kmp: 78d7f318a0abe1dfcb14dbe02de14b2ae4c40abd
 
 PODFILE CHECKSUM: 7c2a9d72ab5d6b463e8ffa162fd8262982756cc9
 

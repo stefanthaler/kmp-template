@@ -1,5 +1,5 @@
 package net.thalerit
 
-actual fun mobileHello()  {
+actual fun mobileHello() {
     println("mobile Android")
 }

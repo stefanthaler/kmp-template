@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'dependency_cocoapods'
     spec.version                  = '1.0.0-override-in-library'
-    spec.homepage                 = 'https://yourhomepage.at'
+    spec.homepage                 = 'https://mylibpage.net'
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
     spec.license                  = ''

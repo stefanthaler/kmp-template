@@ -30,11 +30,10 @@ kotlin {
 
         // add pod dependencies here
         // TODO remove pod dependency after https://youtrack.jetbrains.com/issue/KT-56191 is resolved
-        //pod("AFNetworking", libs.versions.ios.pods.afnetworking.get())
+        pod("AFNetworking", libs.versions.ios.pods.afnetworking.get())
     }
 
-    // shortcut for exporting kmp projects
-    expose(project(":apps:ios:facade"))
+    // shortcut for exporting kmp projects with pod dependencies
     expose(project(":shared:core"))
 
     // configure dependencies here
@@ -43,6 +42,7 @@ kotlin {
             dependencies {
                 // add dependencies as api dependencies
                 // example: api(project(":shared:core"))
+                implementation(project(":apps:ios:dependency-cocoapods"))
             }
         }
     }

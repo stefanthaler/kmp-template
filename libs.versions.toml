@@ -54,11 +54,11 @@ androidx-compose-runtime = { module = "androidx.compose.runtime:runtime" }
 androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "android-core-ktx" }
 androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha03"
-androidx-navigation-compose  = { module = "androidx.navigation:navigation-compose", version.ref="androidx-navigation" }
-androidx-navigation-fragment-ktx  = { module = "androidx.navigation:navigation-fragment-ktx", version.ref="androidx-navigation" }
-androidx-navigation-ui-ktx  = { module = "androidx.navigation:navigation-ui-ktx", version.ref="androidx-navigation" }
-androidx-navigation-dynamic-features-fragment  = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref="androidx-navigation" }
-androidx-navigation-testing  = { module = "androidx.navigation:navigation-testing", version.ref="androidx-navigation" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidx-navigation" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidx-navigation" }
+androidx-navigation-dynamic-features-fragment = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "androidx-navigation" }
+androidx-navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "androidx-navigation" }
 androidx-activity-compose = "androidx.activity:activity-compose:1.7.0-alpha02"
 androidx-test-ext = "androidx.test.ext:junit:1.1.5"
 androidx-test-espresso-core = "androidx.test.espresso:espresso-core:3.5.1"
@@ -104,13 +104,13 @@ kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", vers
 # android
 android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
 android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
-android-objectbox = { id = "io.objectbox", version.ref ="android-objectbox"}
+android-objectbox = { id = "io.objectbox", version.ref = "android-objectbox" }
 
 #   Android
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
-androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "androidx-navigation"}
+androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "androidx-navigation" }
 #   iOS
 kotlin-appleplugin = "org.jetbrains.gradle.apple.applePlugin:222.3345.143-0.19"
 #   JS

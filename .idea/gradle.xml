@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/apps/android" />
             <option value="$PROJECT_DIR$/apps/android/app" />
             <option value="$PROJECT_DIR$/apps/ios" />
+            <option value="$PROJECT_DIR$/apps/ios/dependency-cocoapods" />
             <option value="$PROJECT_DIR$/apps/ios/facade" />
             <option value="$PROJECT_DIR$/apps/js" />
             <option value="$PROJECT_DIR$/apps/js/app" />

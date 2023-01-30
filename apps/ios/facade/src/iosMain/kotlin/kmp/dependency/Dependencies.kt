@@ -1,6 +1,4 @@
-package kmp.dependencies
-
-import kmp.dependency.CocoaPodsDependency
+package kmp.dependency
 
 object Dependencies {
     fun testIntegration() {

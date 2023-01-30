@@ -20,5 +20,5 @@ internal fun VersionCatalog.version(
     findVersion(name).get().displayName
 
 
-internal fun Project.pluginId(alias:String):String =
+internal fun Project.pluginId(alias: String): String =
     catalog.findPlugin(alias).get().get().pluginId
