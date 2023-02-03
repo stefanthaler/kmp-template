@@ -13,7 +13,6 @@ kotlin.js {
 dependencies {
     implementation(project(":shared:core"))
 
-
     implementation(libs.kotlin.wrappers.browser)
     implementation(libs.kotlin.wrappers.react)
     implementation(libs.kotlin.wrappers.react.dom)
